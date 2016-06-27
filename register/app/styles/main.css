@@ -1,0 +1,32 @@
+
+
+/* Custom page header */
+form[novalidate] input{
+  border-left-width: 8px;
+  border-color: blue;
+  border-style: solid;
+}
+form[novalidate] textarea{
+  border-left-width: 8px;
+  border-color: blue;
+  border-style: solid;
+}
+input[required].ng-pristine{
+  border-color: red ;
+
+}
+input.ng-invalid.nd-dirty{
+  border-color: red;
+}
+input.ng-valid.ng-dirty{
+  border-color:green ;
+}
+textarea[required].ng-pristine{
+  border-color: red ;
+}
+textarea.ng-invalid.nd-dirty{
+  border-color: red;
+}
+textarea.ng-valid.ng-dirty{
+  border-color:green ;
+}

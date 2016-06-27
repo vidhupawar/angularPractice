@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/app.js"></script>
+  <script src="scripts/services/factory.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div>
+  <h1 class=" col-md-8 col-md-offset-2">
+    Registration Form
+  </h1>
+  <div class=" col-md-6 col-md-offset-3 well bs-component" align="center"  >
+    <form class="form horizontal form-group "  name="form" novalidate>
+
+      <div class="row ">
+        <label class="col-md-2 control-label" for="name">Name</label>
+        <input type="text" class="col-md-4 form-control" id="name" placeholder="Name" ng-model="name" required>
+        <span ng-show="form.name.$dirty && form.name.$error.required">Required </span>
+
+      </div>
+      <br>
+
+      <div class="row ">
+        <label for="email" class="col-md-2 control-label" >Email</label>
+        <input type="email" class=" col-md-4 form-control" id="email" placeholder="Email" ng-model="email" required>
+        <span ng-show="form.email.$dirty && form.email.$error.required">Required </span>
+      </div>
+      <br>
+      <div class="row ">
+        <label for="dob" class="col-md-2 control-label" > Date of Birth</label>
+        <input type="date" class="col-md-4 form-control" id="dob" placeholder="Date of Birth" ng-model="dob" required>
+        <span ng-show="form.dob.$dirty && form.dob.$error.required">Required </span>
+      </div>
+      <br>
+      <div class="row ">
+        <label for="address" class="col-md-2 control-label" >Address</label>
+        <textarea name="address" cols="3" rows="2" class=" col-md-4 form-control" id="address" placeholder="Address" ng-model="add" required></textarea>
+        <span ng-show="form.address.$dirty && form.address.$error.required">Required </span>
+      </div>
+      <br>
+      <div class="row ">
+        <label class="col-md-2 control-label" >Gender</label>
+        <div class="col-md-4">
+          <input type="radio" value="male" id="male" ng-model="gender" required>Male
+          <input type="radio"  id="female" value="female" ng-model="gender" required>Female
+          <span ng-show="form.gender.$dirty && form.gender.$error.required">Required </span>
+        </div>
+
+      </div>
+      <br>
+      <div class="row ">
+        <label for="pwd" class="col-md-2 control-label" >Password</label>
+        <input type="password" class="col-md-4 form-control" id="pwd" placeholder="Password" name="pwd" ng-model="pwd" ng-minlength="8" ng-maxlength="20" required >
+        <span ng-show="form.pwd.$dirty && form.pwd.$error.required">Required </span>
+      </div>
+
+      <br>
+      <div class="row ">
+        <label for="repwd" class="col-md-2 control-label" >Re-Password</label>
+        <input type="password" class="col-md-4 form-control" id="repwd" placeholder="Re-Password" name="repwd" ng-model="repwd"   match-password="pwd" required>
+        <span ng-show="form.repwd.$dirty && form.repwd.$error.required">Required </span>
+      </div>
+      <br>
+      <div>
+        <button ng-disabled="form.$invalid" ng-click="regUser()">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+
