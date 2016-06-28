@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Learning Management system</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+      <div class="">
+        <div class=" col-md-12 col-sm-12">
+          <div class="panel panel-danger">
+            <div class="panel-heading">True False</div>
+            <div class="panel-body">
+              <div>
+                <div class="row">
+                  <div class="col-md-4">Question 5.</div>
+                  <div class="col-md-4 col-md-offset-4">Correct marks:2,Negative Marks:1</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">$rootScope is the parent of all of the scope variables.</div>
+                  <br>
+                  <br>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                      <span class="sr-only"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" class="col-md-4">A) True
+                    <br>
+                    <input type="radio" class="col-md-4">B) False
+                  </label>
+                  <br>
+                  <br>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                    <span class="sr-only"></span>
+                  </div>
+                </div>
+                <div>
+                  <div class="btn-group" role="group" aria-label="...">
+                    <a href="../test.html" class="btn btn-success glyphicon glyphicon-arrow-left" role="button"><span>Previous</span></a>
+                    <br>
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <br>
+                    <a href="#" data-toggle="modal" data-target="#resultModal" class="btn btn-info glyphicon glyphicon-arrow-right" role="button"><span>Finish</span></a></div>
+                  <br>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="resultModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Learning Management System</h4>
+      </div>
+      <div class="modal-body">
+        <div class="panel panel-custom mrg">
+          <div class="panel-heading">Exam Details<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></div>
+          <div class="panel-body">
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                <tr>
+                  <th><strong class="text-primary">Attempts</strong></th>
+                  <td><strong class="text-success">10</strong></td>
+             </tr>
+                <tr>
+                  <th><strong class="text-success">Not Attempt</strong></th>
+                  <td><strong class="text-success">3</strong></td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <a href="" data-toggle="tooltip" title="Attempt Now" target="_blank" class="btn btn-success"><span class="fa fa-sign-in"></span> Result</a>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <script src="../../bower_components/angular/angular.min.js"></script>
+        <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../../bower_components/angular-route/angular-route.js"></script>
+        <script src="../../bower_components/ngstorage/ngStorage.js"></script>
+        <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script src="../../scripts/app.js"></script>
+        <script src="../../scripts/service/factory.js"></script>
+        <script src="../../scripts/controllers/user.js"></script>
+        <script src="../../scripts/route.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <script src="angular.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/service/factory.js"></script>
+  <script src="scripts/controller/main.js"></script>
+
+</head>
+<body ng-app="myApp"  >
+<form ng-controller="regCtrl">
+            <label >ID</label>
+              <input type="text" placeholder="id" ng-model="uid"  >
+            <div>
+            <label>Password</label>
+              <input type="password"  placeholder="Password" ng-model="pswd" >
+            </div>
+           <div>
+             {{regUser.user}}
+             <!--<input type="submit" ng-click="register()">-->
+           </div>
+  </form>
+</body>
+</html>

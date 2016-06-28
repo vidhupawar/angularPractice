@@ -1,0 +1,10 @@
+1. What is JavaScript?
+2. What are JavaScript types?
+3. What is the use of isNaN function?
+4. What is negative infinity?
+5. Is it possible to break JavaScript Code into several lines?
+6. Which company developed JavaScript?
+7. What are undeclared and undefined variables?
+8. Which symbol is used for comments in Javascript?
+9. What is === operator?
+10. Explain the difference between “==” and “===”?

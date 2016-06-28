@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../styles/dashboard.css" rel="stylesheet">
+</head>
+<body>
+<div class="col-sm-12 col-md-12">
+  <h3>My Exam</h3>
+  <div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-success">Today's Exam</button>
+    <!--  <button type="button" class="btn btn-primary">Upcoming Exam</button>
+      <button type="button" class="btn btn-info">Expired Exam</button>-->
+    <div>
+      <br>
+      <br>
+      <!-- <label>Today's Exam</label><br>-->
+      <label>These are the exam(s) that can be taken right now</label>
+      <div class="col-sm-12 col-md-12">
+
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>End Date</th>
+            <th>Expiry</th>
+            <th>Action</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1.</td>
+            <td>AngularJs</td>
+            <td>MCQ</td>
+            <td>13/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-toggle="modal" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" data-target="#questionModal" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="modal" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Boootstrap</td>
+            <td>MCQ</td>
+            <td>17/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detail" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html"  class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>ExpressJs</td>
+            <td>MCQ</td>
+            <td>20/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          <tr>
+            <td>4.</td>
+            <td>JavaScript</td>
+            <td>MCQ</td>
+            <td>24/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>MongoDb</td>
+            <td>MCQ</td>
+            <td>27/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td>Npm</td>
+            <td>MCQ</td>
+            <td>31/5/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td>NodeJs</td>
+            <td>MCQ</td>
+            <td>3/6/2016</td>
+            <td>5 days</td>
+            <td><a href="#/test" data-target="#detailModal" class="btn btn-primary btn-xs active glyphicon glyphicon-move" data-toggle="modal" data-placement="bottom" title="view details" role="button"></a></td>
+            <td><a href="../views/test/question.html" class="btn btn-primary btn-xs active glyphicon glyphicon-log-in" data-toggle="tooltip" data-placement="bottom" title="attempt now" role="button"></a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <!-- detail modal starts
+   <div class="modal fade" tabindex="-1" role="dialog" id="detailModal">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+           <h4 class="modal-title">Learning Management System</h4>
+         </div>
+         <div class="modal-body">
+ <div class="panel panel-custom mrg">
+   <div class="panel-heading">Exam Details<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></div>
+   <div class="panel-body">
+     <div class="table-responsive">
+       <table class="table">
+         <tbody><tr>
+           <td><strong class="text-primary">Name</strong></td>
+           <td><strong class="text-success">With Browser Tolerence</strong></td>
+           <td><strong class="text-primary">Type</strong></td>
+           <td><strong class="text-success">Exam</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-primary">Passing Percentage</strong></td>
+           <td><strong class="text-success">50%</strong></td>
+           <td><strong class="text-primary">Duration</strong></td>
+           <td><strong class="text-success">1 hr</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-primary">Start Date</strong></td>
+           <td><strong class="text-success">01-05-2016</strong></td>
+           <td><strong class="text-primary">End Date</strong></td>
+           <td><strong class="text-success">31-05-2016</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-primary">Negative Marking</strong></td>
+           <td><strong class="text-success">Yes</strong></td>
+           <td><strong class="text-primary">Total Marks</strong></td>
+           <td><strong class="text-success">300.00</strong></td>
+         </tr>
+         </tbody></table>
+       <table class="table">
+         <tbody><tr>
+           <th><strong class="text-primary">Subject</strong></th>
+           <th><strong class="text-primary">Total Question</strong></th>
+         </tr>
+         <tr>
+           <td><strong class="text-success">Angularjs</strong></td>
+           <td><strong class="text-success">10</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-success">NodeJs</strong></td>
+           <td><strong class="text-success">10</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-success">MongoDB</strong></td>
+           <td><strong class="text-success">10</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-success">Express</strong></td>
+           <td><strong class="text-success">10</strong></td>
+         </tr>
+         <tr>
+           <td><strong class="text-danger">Total</strong></td>
+           <td><strong class="text-danger">40</strong></td>
+         </tr>
+         <tr>
+           <td colspan="4">
+             <a href="" data-toggle="tooltip" title="Attempt Now" target="_blank" class="btn btn-success"><span class="fa fa-sign-in"></span> Attempt Now</a>				</td>
+         </tr>
+         </tbody>
+       </table>
+     </div>
+   </div>
+ </div>
+ </div>
+       </div>
+     </div>
+   </div>
+         detail modal ends
+
+         question modal starts
+         <div class="modal fade" tabindex="-1" role="dialog" id="questionModal">
+ <div class="col-md-6">
+   <div class="exam-border">
+     <h3></h3>
+   </div>
+ </div>
+ <div class="container">
+   <div class=" col-md-12 col-sm-6">
+     <div class="panel panel-danger">
+       <div class="panel-heading">Warning!</div>
+       <div class="panel-body">
+         <div class="bg-success">
+           <h3>
+             <p>Please Close All Programs that Upload or Download Files, Chat Window, Screen-Saver in Background <br>
+               Do not Press "F5" Key It will Restart Your Test And All Progress Will Be Failed
+             </p>
+             <p>Ready To Start Exam click Next</p>
+             <a href="../views/test/first.html" class="btn btn-primary btn-md active -align-center" role="button">Next</a>
+           </h3>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+           </div>-->
+</div>
+
+
+<div class="col-sm-12 col-md-12">
+</div>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../scripts/route.js"></script>
+</body>
+</html>

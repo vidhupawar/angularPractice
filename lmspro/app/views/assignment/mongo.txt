@@ -1,0 +1,7 @@
+1) Explain what is MongoDB?
+2) What is “Namespace” in MongoDB?
+3) What is sharding in MongoDB?
+4) how do we create Schema in MongoDB ?
+5) What is the syntax to create a collection and to drop a collection in MongoDB?
+6) Can you move old files in the moveChunk directory?
+7) Mention what is the command syntax for inserting a document?

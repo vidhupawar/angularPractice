@@ -1,0 +1,11 @@
+1) What is AngularJS?
+2) Explain what are the key features of AngularJS 
+3) Explain what is scope in AngularJS ?
+4) Explain what is services in AngularJS ?
+5) Explain what Angular JS routes does ?
+6)  Explain what is data binding in AngularJS ?
+7)  Explain what is injector?
+8)  Mention what are the characteristics of “Scope”?
+9)  Explain what is DI (Dependency Injection ) and how an object or function can get a hold of its dependencies ?
+10)  Mention what are the advantages of using Angular.js framework ?
+

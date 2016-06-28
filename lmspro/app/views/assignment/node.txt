@@ -1,0 +1,10 @@
+1)      What is node.js?
+2)      How node.js works?
+3)      What do you mean by the term I/O ?
+4)      What does event-driven programming mean?
+5)      Where can we use node.js?
+6)      What are the two types of API functions in Node.js ?
+7)   Why Node.js is single threaded? 
+8)   What is an event loop in Node.js ?
+9)    What are the pros and cons of Node.js?
+10)   How Node.js overcomes the problem of blocking of I/O operations?

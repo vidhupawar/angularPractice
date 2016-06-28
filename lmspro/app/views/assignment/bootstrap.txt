@@ -1,0 +1,8 @@
+1) Explain what is Bootstrap?
+2) Explain why to choose Bootstrap for building the websites?
+3) Explain what is Bootstrap Grid System?
+4) What are offset columns in Bootstrap?
+5) What is column ordering in Bootstrap?
+6) Explain what is Modal plugin used for in Bootstrap?
+7) Explain Nav elements in Bootstrap?
+8) Explain what is the use of Bootstrap Carousel plugin?
